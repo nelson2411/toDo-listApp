@@ -10,6 +10,7 @@ const taskInput = document.querySelector('#task');
 loadEventListeners();
 
 
+
 // Load all event listeners
 function loadEventListeners(){
     // Add task event
