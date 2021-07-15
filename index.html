@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700;900&display=swap" rel="stylesheet"> 
+<script src="https://kit.fontawesome.com/0f80bcffac.js" crossorigin="anonymous"></script>
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container-center">
+    <div class="container">
+        <div class="card-content">
+            <h2 class="card-title">To Do List</h2>
+                <form id="task-form">
+                    <input type="text" name="task" id="task" placeholder="Title">
+                    <input type="submit" value="Add Task" class="add-task">
+                </form>
+        </div>
+        <div class="card-list">
+            <h5 id="task-list">To Do..</h5>
+            <ul class="group-tasks"></ul>
+            <div class="clear-list">
+            <a href="#"  class="remove" role="button">Remove All</a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

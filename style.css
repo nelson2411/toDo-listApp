@@ -1,0 +1,116 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+  }
+  HTML, body {
+    margin: 0px;
+    padding: 0px;
+      border: 0px;
+      font-family: 'Source Code Pro', monospace;
+      overflow-y: auto;
+
+    }
+
+.container-center{
+    height: 100vh;
+    position: relative;
+}
+    .container{
+        border: solid 1px;
+        display: block;
+        width: 500px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 0 0 2rem 0;
+        background-color: rgba(170, 161, 161, 1);
+    }
+
+    .container h2{
+        letter-spacing: 1px;
+    }
+    
+    .card-content{
+        background-color: #4D4D4D;
+        padding: 2rem 1rem 0.7rem;
+    }
+
+     #task-form{
+         display: flex;
+         height: 1.9rem;
+     }   
+
+    #task-form #task{
+        width: 100%;
+        border-radius: 0;
+        border:none;
+
+    }
+
+    #task-form .add-task{
+        letter-spacing: 1px;
+        border-radius: 0;
+        background-color: #C4C4C4;
+        border: none;
+        cursor: pointer;
+        padding: 0 0.5rem;
+    }
+
+    ul{
+        padding: 1rem 0 1rem 0;
+        list-style-type: none;
+    }
+
+    li {
+        background-color: #458B83 ;
+        padding: 1rem 1rem;
+        text-align: left;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+    }
+
+    li a{
+        width: 85%;
+        position: absolute;
+    }
+
+    li:nth-child(even){
+        background-color: white;
+    }
+
+    .fa, .fas{
+        font-size: 1.3rem;
+        text-align: right;
+        display: block !important;
+    }
+    .clear-list{
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+
+    }
+    
+     .clear-list a{
+         background-color: black;
+        text-align: center;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-decoration: none;
+        width: 250px;
+        padding: 10px 20px;
+        margin: 5px 10px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        box-shadow: 0 0 3px 5px #868686;
+
+    }
+    .clear-list a:hover{
+        background-color: white;
+        color: black;
+    }
