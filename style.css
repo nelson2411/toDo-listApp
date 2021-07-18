@@ -12,7 +12,6 @@
 
 .container-center{
     height: 100vh;
-    position: relative;
 }
 
 .container-center::before{
@@ -152,11 +151,20 @@
 
     /* Responsive Media queries */
     @media (max-width: 450px) and (min-width: 300px){
+.container-center{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
         .container-center::before{
             background: thistle;
+            position: absolute;
         }
         .container{
             width: 85%;
+            position: relative;
+            padding-bottom: 0;
         }
         #task-form{
             display: flex;
@@ -172,6 +180,11 @@
         }
         .card-content{
             height: 14rem;
+        }
+
+        .img-1{
+            position: relative;
+            margin-bottom: 2rem;
         }
 
         img{
