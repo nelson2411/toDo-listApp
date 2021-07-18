@@ -14,6 +14,34 @@
     height: 100vh;
     position: relative;
 }
+
+.container-center::before{
+    content: "";
+    background-image: url("./assets/background.jpg");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-position: center;
+    filter: sepia(70%);
+    z-index: -1;
+
+}
+
+    .img-1{
+        width: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    img{
+        width: 20%;
+    }
     .container{
         border: solid 1px;
         display: block;
@@ -31,6 +59,7 @@
 
     .container h2{
         letter-spacing: 1px;
+        color: whitesmoke;
     }
     
     .card-content{
@@ -63,6 +92,12 @@
         padding: 1rem 0 1rem 0;
         list-style-type: none;
     }
+
+    ul li:before {
+        content: '✓';
+        margin-right: 5px;
+        font-size: 0.9rem;
+      }
 
     li {
         background-color: #458B83 ;
@@ -113,4 +148,64 @@
     .clear-list a:hover{
         background-color: white;
         color: black;
+    }
+
+    /* Responsive Media queries */
+    @media (max-width: 450px) and (min-width: 300px){
+        .container-center::before{
+            background: thistle;
+        }
+        .container{
+            width: 85%;
+        }
+        #task-form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #task-form #task{
+            padding: 7px 4px;
+        }
+
+        #task-form .add-task{
+            padding: 0.5rem 0.5rem;
+        }
+        .card-content{
+            height: 14rem;
+        }
+
+        img{
+            width: 60%;
+        }
+    }
+
+    @media (max-width: 899px) and (min-width: 451px){
+        img{
+            width: 40%;
+        }
+        .container-center::before{
+            background: thistle;
+        }
+        .container{
+            width: 85%;
+        }
+        #task-form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #task-form #task{
+            padding: 7px 4px;
+        }
+
+        #task-form .add-task{
+            padding: 0.5rem 0.5rem;
+        }
+        .card-content{
+            height: 14rem;
+        }
+
+
+
+
     }
