@@ -163,7 +163,6 @@
         }
         .container{
             width: 85%;
-            position: relative;
             padding-bottom: 0;
         }
         #task-form{
