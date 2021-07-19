@@ -104,12 +104,12 @@
         text-align: left;
         width: 100%;
         overflow: hidden;
-        display: flex;
     }
 
     li a{
-        width: 85%;
-        position: absolute;
+        float: right;
+        cursor: pointer;
+        margin-right: 15px;
     }
 
     li:nth-child(even){
