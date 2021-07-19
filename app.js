@@ -1,11 +1,11 @@
-// Defining UI Variables
+// UI Variables
 const form = document.querySelector('#task-form');
 const taskList = document.querySelector('.group-tasks');
 const clearTasks = document.querySelector('.remove');
 const taskInput = document.querySelector('#task');
 
 
-// Load all event listeners
+// Event listeners
 
 loadEventListeners();
 
@@ -23,7 +23,7 @@ function loadEventListeners(){
     clearTasks.addEventListener('click', clearList);
 }
 
-// get tasks from LS
+// get tasks from Local Storage
 function getTasks(){
     let tasks;
     if(localStorage.getItem('tasks') === null){
@@ -33,7 +33,7 @@ function getTasks(){
     }
 
     tasks.forEach(function(task){
-            // Create li element
+    // Create li element
     const li = document.createElement('li');
     // Add a class
 

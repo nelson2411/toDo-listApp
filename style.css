@@ -28,7 +28,7 @@
     z-index: -1;
 
 }
-
+/* Integrify Logo */
     .img-1{
         width: 100%;
         position: absolute;
@@ -41,6 +41,9 @@
     img{
         width: 20%;
     }
+
+ /* End of styling for Integrify Logo */   
+ /* App styling */
     .container{
         border: solid 1px;
         display: block;
@@ -148,6 +151,7 @@
         background-color: white;
         color: black;
     }
+     /* End of App styling */
 
     /* Responsive Media queries */
     @media (max-width: 450px) and (min-width: 300px){
